@@ -1,0 +1,1 @@
+Get-WinEvent -FilterHashtable @{logname='system'; level=2; StartTime=$(Get-Date).AddDays(-9); EndTime=$(Get-Date)} -MaxEvents 5 -ErrorAction SilentlyContinue | Format-List *
