@@ -1,0 +1,1 @@
+﻿Get-Service | Where-Object -Property StartType -EQ "Automatic" | sort Status -descending | select ServiceName, StartType, Status
