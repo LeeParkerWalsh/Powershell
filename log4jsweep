@@ -1,0 +1,1 @@
+Get-ChildItem -Path C:\ *log4j*.jar -Recurse -ErrorAction SilentlyContinue | Out-File log4jsweep.txt -Append
